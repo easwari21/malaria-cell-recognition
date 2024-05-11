@@ -5,26 +5,50 @@
 To develop a deep neural network for Malaria infected cell recognition and to analyze the performance.
 
 ## Problem Statement and Dataset
+The goal is to create an algorithm that can detect malaria-infected cells in blood samples using deep learning techniques.To develop a model that can accurately identify infected cells and distinguish them from healthy ones. The performance of the model will be evaluated based on its accuracy, precision, recall, and F1 score. This problem statement is important because it can help improve the diagnosis of malaria and reduce the time and cost associated with manual diagnosis.
+
+Malaria dataset of 27,558 cell images with an equal number of parasitized and uninfected cells. A level-set based algorithm was applied to detect and segment the red blood cells. The images were collected and annotated by medical professionals.Here we build a convolutional neural network model 
 
 ## Neural Network Model
 
-Include the neural network model diagram.
+![output](network.jpg)
 
 ## DESIGN STEPS
 
 ### STEP 1:
+Import tensorflow and preprocessing libraries
 
 ### STEP 2:
+Download and load the dataset folder
 
 ### STEP 3:
+Split the training and testing folders.
 
-Write your own steps
+###  STEP 4:
+Perform image data generation methods.
+
+###  STEP-5:
+Build the convolutional neural network model
+
+###  STEP-6:
+Train the model with the training data
+
+###  STEP-7:
+Plot the performance plot
+
+###  STEP-8:
+Evaluate the model with the testing data using probability prediction(uninfected-> prob>0.5,parasitized-> <=0.5)
+
+###  STEP-9:
+Fit the model and predict the sample input.
+
+
 
 ## PROGRAM
 
-### Name:
+### Name: Easwari M
 
-### Register Number:
+### Register Number: 212223240033
 
 ```
 DEVELOPED BY: Easwari M
@@ -199,19 +223,19 @@ confusion_matrix(test_image_gen.classes,predictions)
 
 ### Training Loss, Validation Loss Vs Iteration Plot
 
-![output](.png)
+![output](plot.png)
 
 ### Classification Report
 
-![output](.png)
+![output](class.png)
 
 ### Confusion Matrix
 
-![output](.png)
+![output](pred.png)
 
 ### New Sample Data Prediction
 
-![output](.png)
+![output](new.png)
 
 ## RESULT
 
